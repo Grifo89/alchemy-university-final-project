@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Heading, Spacer, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { ethers } from "ethers";
 import { ToggleColor } from "./ToggleColorMode";
 
