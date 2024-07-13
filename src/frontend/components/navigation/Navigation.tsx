@@ -1,6 +1,7 @@
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import { ethers } from "ethers";
 import { ToggleColor } from "./ToggleColorMode";
+import { useEffect } from "react";
 
 interface Props {
   account: string;
@@ -19,6 +20,20 @@ const Navigation = ({ account, setAccount }: Props) => {
       alert("Plug-in wallet not installed");
     }
   };
+
+  const walletChange = async () => {
+    window.ethereum.on("accountsChanged", async () => {
+      const accounts = await window.ethereum.request({
+        method: "eth_requestAccounts",
+      });
+      const account = ethers.getAddress(accounts[0]);
+      setAccount(account);
+    });
+  };
+
+  useEffect(() => {
+    walletChange();
+  }, []);
 
   return (
     <nav>

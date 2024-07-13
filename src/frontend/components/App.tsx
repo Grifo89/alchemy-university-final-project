@@ -1,14 +1,14 @@
 import "./App.css";
-import { VStack } from "@chakra-ui/react";
-import Navigation from "./Navigation";
+import Navigation from "./navigation/Navigation";
 import { useState } from "react";
+import TokenOperations from "./features/TokenOperations";
 
 function App() {
   const [account, setAccount] = useState("");
   return (
     <>
       <Navigation account={account} setAccount={setAccount} />
-      <VStack justify="center"></VStack>
+      <TokenOperations account={account} />
     </>
   );
 }
