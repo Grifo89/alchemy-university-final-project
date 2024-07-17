@@ -3,10 +3,7 @@ pragma solidity ^0.8.24;
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "hardhat/console.sol";
 
-/**
- * @title Simple DeFi Token
- * @dev Very simple token that is used for demonstrating various of DeFi applications
- */
+
 contract SimpleToken is ERC20 {
     constructor() ERC20("Alchemy University Succeed Token", "AUS") {
         // Initial supply of 1,000,000 tokens are given to msg.sender
