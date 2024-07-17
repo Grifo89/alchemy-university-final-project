@@ -29,6 +29,7 @@ export default function TransactionForm({ provider, transferFlag }: Props) {
     register,
     handleSubmit,
     resetField,
+    watch,
     formState: { errors },
   } = useForm<Inputs>();
 
@@ -105,7 +106,7 @@ export default function TransactionForm({ provider, transferFlag }: Props) {
     }
   };
 
-  // console.log(watch("recipient"));
+  console.log(watch("recipient"));
 
   return (
     <Box marginTop={10} width={"md"}>

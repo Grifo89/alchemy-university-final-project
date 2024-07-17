@@ -33,7 +33,7 @@ Before running this DApp locally, make sure you have the following installed:
 ## Usage
 
 1. Connect your MetaMask wallet to the local network.
-2. Select the AUS token from the dropdown.
+2. Import some accounts from you local network to Metamask
 3. Interact with the DApp to send or receive AUS tokens.
 4. View your transaction history.
 
