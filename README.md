@@ -27,7 +27,7 @@ Before running this DApp locally, make sure you have the following installed:
 1. Clone this repository.
 2. Install dependencies by running `npm install`.
 3. Start the local blockchain network using Hardhat: `npx hardhat node`.
-4. Deploy the smart contract using Hardhat: `npx hardhat run scripts/deploy.js`.
+4. Deploy the smart contract using Hardhat: `npx hardhat run scripts/deploy.js --network localhost`.
 5. Start the React app: `npm run dev`.
 
 ## Usage
